@@ -1,0 +1,30 @@
+h1{
+  color:white;
+}
+body {
+  background-color: #6699ff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  min-width: 320px;
+}
+#outerbox {
+  margin: 0 auto;
+  width:65%;
+  background: #ff9966;
+
+}
+.container{
+  display:grid;
+ }
+#bottom-space{
+  height:20px;
+}
+#question{
+  width: 40%;
+ }
+#containter-end{
+  height: 20px;
+}
+#radio{
+  flex-direction: column;
+}

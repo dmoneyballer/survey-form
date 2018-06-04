@@ -1,3 +1,47 @@
 <html>
-<div></div>
+ <div id="topSpace">
+  </div>
+<div>
+  <header><h1 id="title">Survey page</h1></header>
+</div>
+<div id="outerbox" class="container">
+  <div>
+    <p id="description">We want to know what you think about hot dogs</p>
+      <form id="survey-form">
+        <p id="name">Name:  <input type="text" id="name-label" placeholder="Name"></input></p>
+        <p id="email">Email:  <input type="email" id="email-label" placeholder="Email"></input></p>
+        <p id="number">Age:  <input type="number" id="number-label" placeholder="Age" min="0" max="111"></input></p>
+        <p> How many hot dogs do you eat in a year?</p>
+        <div id="tab">
+          <select onkeyup="filterFunction()" class="dropdown" id="dropdown">
+            <option disabled selected value>number of hotdogs consumed</option>
+            <option value="1-5 hotdogs per year">1-5 Hotdogs per year</option>
+            <option value="5-20 Hotdogs per year">5-20 Hotdogs per year</option>
+            <option value="21-50 Hotdogs per year">21-50 Hotdogs per year</option>
+            <option value="51-150 Hotdogs per year">51-150 Hotdogs per year</option>
+            <option value="151-300 Hotdogs per year">151-300 Hotdogs per year</option>
+            <option value="301+ hotdogs per year">301+ Hotdogs per year</option>
+          </select>
+        </div>
+        <p>What's your favorite brand of Hotdogs?</p>
+          <div id="radio">
+            <ul>
+              <input name="radio" type="radio" value="1">Oscar Meyer<br>
+              <input name="radio" type="radio" value="2">Hebrew National<br>
+              <input name="radio" type="radio" value="3">Ballpark<br>
+          </div>
+          <div>
+            <p>Best time to eat a hotdog?</p><textarea id="question" placeholder="When is the best time to eat a hotdog?"></textarea>
+          </div>
+            <div>
+              <button id="submit" type="submit" value="">submit</button>
+            </div>
+            <div id="containter-end">
+            </div>
+        </div>
+
+      </form>
+    </div>
+<div id="bottom-space">
+</div>
 </html>
